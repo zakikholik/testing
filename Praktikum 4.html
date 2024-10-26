@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sederhana</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="judul">SELAMAT DATANG!</h1>
+        <p id="subjudul">Ini adalah Website Sederhana</p>
+    </div>
+    <div id="content">
+        <form name="FormEmail" onsubmit="return validasiFormEmail()">
+            <h3>Nama Lengkap</h3>
+            <input type="text" name="nama" placeholder="Nama"><br>
+            <h3>Email</h3>
+            <input type="text" name="email" placeholder="Email"><br>
+            <h3>Nomor Handphone</h3>
+            <input type="text" name="no" placeholder="Nomor Handphone"><br>
+            <button type="submit">Kirim</button>
+        </form>
+        <script>
+            function validasiFormEmail(){
+                let nama = document.forms["FormEmail"]["nama"].value;
+                let email = document.forms["FormEmail"]["email"].value;
+                let No = document.forms["FormEmail"]["no"].value;
+                
+                if(nama == ""){
+                    alert("Nama belum diisi!");
+                    return false;
+                }
+                if(email == "" || email.indexOf("@") == -1){
+                    alert("Masukkan email yang valid.");
+                    return false;
+                }
+                if(No == ""){
+                    alert("Nomor HP harus diisi!");
+                    return false;     
+                }else if(No.length < 10){
+                    alert("Nomor HP harus 10 karakter!");
+                    return false;
+                }
+
+                alert("Form Berhasil dikirim!");
+                return true;
+            }
+        </script>
+    </div>
+    <div id="footer">
+        <p id="made">Website made by Zaki Kholik</p>
+    </div>
+    <script>
+        alert("Selamat Datang di Website Saya!");
+    </script>
+</body>
+</html>

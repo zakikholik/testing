@@ -1,0 +1,62 @@
+button:hover {
+    background-color: lightgray;
+}
+button {
+    padding : 10px;
+    background-color: grey;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h3 {
+    color: black;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+#made {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 30px;
+}
+#judul {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#subjudul {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium ;
+    text-decoration: solid;
+}
+#header {
+    height: 150px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+#content {
+    height: 400px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 50px;
+}
+#footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
